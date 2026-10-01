@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#e7ddc9" />
+    <meta name="description" content="Пять интерактивных параллакс-сцен: лунный портал, мезозойская долина, пруд, греческая деревня и советская комната." />
+    <title>Места — параллакс-сцены</title>
+    <link rel="preload" href="./assets/portal-background.webp" as="image" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body data-scene="portal">
+    <main class="app">
+      <header class="masthead">
+        <div class="brand" aria-label="Атлас тихих мест">
+          <span class="brand-mark" aria-hidden="true">✳</span>
+          <span>АТЛАС<br />ТИХИХ МЕСТ</span>
+        </div>
+        <div class="issue">ИНТЕРАКТИВНЫЕ ПЕЙЗАЖИ <span class="issue-separator">/</span> 2026</div>
+      </header>
+
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow" id="scene-kicker">МЕСТО 04 · ПО ТУ СТОРОНУ</p>
+          <h1 id="page-title"><span id="title-main">Лунный</span> <em id="title-accent">портал</em></h1>
+        </div>
+        <p class="intro-copy" id="scene-description">Шесть планов глубины: долина, лес, светящийся проход и деревья совсем рядом с камерой.</p>
+      </section>
+
+      <nav class="location-nav" aria-label="Выбор локации">
+        <div class="location-tabs">
+          <button class="location-tab" type="button" data-location="pond" aria-pressed="false"><span>01</span> Пруд на закате</button>
+          <button class="location-tab" type="button" data-location="greece" aria-pressed="false"><span>02</span> Греческая деревня</button>
+          <button class="location-tab" type="button" data-location="room" aria-pressed="false"><span>03</span> Комната СССР</button>
+          <button class="location-tab is-active" type="button" data-location="portal" aria-pressed="true"><span>04</span> Лунный портал</button>
+          <button class="location-tab" type="button" data-location="meso" aria-pressed="false"><span>05</span> Мезозойская долина</button>
+        </div>
+        <span class="nav-caption" id="layer-caption">6 НЕЗАВИСИМЫХ ПЛАНОВ ГЛУБИНЫ</span>
+      </nav>
+
+      <section class="scene-shell">
+        <div class="scene" id="scene" tabindex="0" aria-label="Лунный портал, интерактивная параллакс-сцена" aria-describedby="scene-help">
+          <div class="scene-panel" data-panel="pond" aria-hidden="true">
+            <div class="scene-layer layer-background" data-plane="background" data-depth="-20" aria-hidden="true"><img src="./assets/pond-background.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer pond-boat" data-plane="boat" data-depth="8" data-drift="boat" aria-hidden="true"><img src="./assets/pond-boat.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer pond-dock" data-plane="dock" data-depth="50" aria-hidden="true"><img src="./assets/pond-dock.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer pond-reeds pond-reeds-left" data-plane="reeds" data-depth="85" aria-hidden="true"><img src="./assets/pond-reeds.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer pond-reeds pond-reeds-right" data-plane="reeds" data-depth="80" aria-hidden="true"><img src="./assets/pond-reeds.webp" alt="" draggable="false" /></div>
+          </div>
+          <div class="scene-panel" data-panel="greece" aria-hidden="true">
+            <div class="scene-layer layer-background" data-plane="background" data-depth="-20" aria-hidden="true"><img src="./assets/greece-clean-background.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer greece-houses" data-plane="houses" data-depth="8" aria-hidden="true"><img src="./assets/greece-island-houses.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer greece-fence" data-plane="fence" data-depth="25" aria-hidden="true"><img src="./assets/greece-fence.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer greece-olive" data-plane="olive" data-depth="55" aria-hidden="true"><img src="./assets/greece-olive.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer greece-orange" data-plane="orange" data-depth="85" aria-hidden="true"><img src="./assets/greece-orange.webp" alt="" draggable="false" /></div>
+          </div>
+          <div class="scene-panel" data-panel="room" aria-hidden="true">
+            <div class="scene-layer layer-background" data-plane="background" data-depth="-18" aria-hidden="true"><img src="./assets/room-background.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer room-cabinet" data-plane="cabinet" data-depth="22" aria-hidden="true"><img src="./assets/room-cabinet.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer room-armchair" data-plane="armchair" data-depth="38" aria-hidden="true"><img src="./assets/room-armchair.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer room-chair room-chair-left" data-plane="chair-left" data-depth="55" aria-hidden="true"><img src="./assets/room-chair-left.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer room-chair room-chair-right" data-plane="chair-right" data-depth="60" aria-hidden="true"><img src="./assets/room-chair-right.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer room-table" data-plane="table" data-depth="70" aria-hidden="true"><img src="./assets/room-table-solo.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer room-ball" data-plane="ball" data-depth="95" aria-hidden="true"><img src="./assets/room-ball.webp" alt="" draggable="false" /></div>
+          </div>
+          <div class="scene-panel is-active" data-panel="portal" aria-hidden="false">
+            <div class="scene-layer layer-background" data-plane="background" data-depth="-25" aria-hidden="true"><img src="./assets/portal-background.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer portal-far-trees" data-plane="far-trees" data-depth="10" aria-hidden="true"><img src="./assets/portal-far-trees.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer portal-arch" data-plane="arch" data-depth="38" aria-hidden="true"><img src="./assets/portal-arch.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer portal-left-tree" data-plane="left-tree" data-depth="77" aria-hidden="true"><img src="./assets/portal-left-tree.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer portal-right-tree" data-plane="right-tree" data-depth="82" aria-hidden="true"><img src="./assets/portal-right-tree.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer portal-foreground" data-plane="foreground" data-depth="115" aria-hidden="true"><img src="./assets/portal-foreground.webp" alt="" draggable="false" /></div>
+          </div>
+          <div class="scene-panel" data-panel="meso" aria-hidden="true">
+            <div class="scene-layer layer-background" data-plane="background" data-depth="-24" aria-hidden="true"><img src="./assets/meso-background.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer meso-sauropods" data-plane="sauropods" data-depth="13" aria-hidden="true"><img src="./assets/meso-sauropods.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer meso-pterosaurs" data-plane="pterosaurs" data-depth="29" data-drift="fly" aria-hidden="true"><img src="./assets/meso-pterosaurs.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer meso-trex" data-plane="trex" data-depth="59" aria-hidden="true"><img src="./assets/meso-trex.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer meso-ferns meso-ferns-left" data-plane="ferns-left" data-depth="93" aria-hidden="true"><img src="./assets/meso-ferns-left.webp" alt="" draggable="false" /></div>
+            <div class="scene-layer meso-ferns meso-ferns-right" data-plane="ferns-right" data-depth="103" aria-hidden="true"><img src="./assets/meso-ferns-right.webp" alt="" draggable="false" /></div>
+          </div>
+          <div class="scene-vignette" aria-hidden="true"></div>
+          <div class="scene-plaque" aria-hidden="true"><span id="plaque-number">04 / 05</span><span id="plaque-place">ЛУННАЯ ДОЛИНА</span></div>
+          <button class="fullscreen-button" type="button" id="fullscreen-toggle" aria-label="Показать сцену на весь экран">⛶ <span>На весь экран</span></button>
+        </div>
+        <div class="scene-shadow" aria-hidden="true"></div>
+      </section>
+
+      <div class="depth-strip" aria-label="Слои выбранной сцены">
+        <span class="depth-heading">СЛОИ <span id="depth-count">06</span></span>
+        <div class="depth-list" id="depth-list"></div>
+        <span class="depth-hint">НАЖМИТЕ, ЧТОБЫ СКРЫТЬ ПЛАН</span>
+      </div>
+
+      <footer class="control-bar">
+        <div class="help-block" id="scene-help"><span class="help-icon" aria-hidden="true">↔</span><span id="mode-description">Авто: планы плавно движутся из стороны в сторону. Курсор не влияет на сцену.</span></div>
+        <div class="mode-controls" role="group" aria-label="Режим движения">
+          <button class="mode-button is-active" type="button" data-mode="auto" aria-pressed="true">Авто</button>
+          <button class="mode-button" type="button" data-mode="mouse" aria-pressed="false">Мышь</button>
+          <button class="mode-button" type="button" data-mode="pause" aria-pressed="false">Пауза</button>
+        </div>
+      </footer>
+      <p class="footnote">ПЯТЬ ЛОКАЦИЙ · ДО СЕМИ ПЛАНОВ ГЛУБИНЫ</p>
+    </main>
+  </body>
+</html>
