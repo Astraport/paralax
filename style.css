@@ -97,12 +97,11 @@ body[data-scene="meso"] .scene-vignette { background: radial-gradient(ellipse at
 .pond-reeds-left { width: 29%; left: -5%; bottom: -9%; }
 .pond-reeds-right { width: 18%; right: -6%; bottom: -9%; }
 .pond-reeds-right img { transform: scaleX(-1); }
-.greece-houses { width: 34%; left: 52%; bottom: 58%; }
+.greece-houses { width: 40.8%; left: 48.6%; bottom: 58%; }
 .greece-houses img { mask-image: linear-gradient(to bottom, #000 0 68%, transparent 100%); }
-.greece-occluder { mask-image: linear-gradient(to right, #000 0 34%, transparent 39% 62%, #000 67%); }
-.greece-fence { width: 39%; right: -11%; bottom: -11%; }
+.greece-fence { width: 39%; right: -17%; bottom: -11%; }
 .greece-olive { width: 23%; left: -5%; bottom: -9%; }
-.greece-orange { width: 18%; right: 7%; bottom: -1%; }
+.greece-orange { width: 18%; right: 7%; bottom: -5%; }
 .portal-far-trees { width: 100%; left: 0; bottom: -15%; }
 .portal-arch { width: 21%; left: 39.5%; bottom: -6%; }
 .portal-arch img { animation: portal-glow 4.8s ease-in-out infinite; }
@@ -120,7 +119,7 @@ body[data-scene="meso"] .scene-vignette { background: radial-gradient(ellipse at
   50% { filter: drop-shadow(0 0 28px rgba(75, 216, 255, .68)); }
 }
 .scene[data-mode="pause"] .portal-arch img { animation-play-state: paused; }
-.room-cabinet { width: 17%; right: 18%; bottom: 13%; }
+.room-cabinet { width: 22.1%; right: 18%; bottom: 13%; }
 .room-armchair { width: 21%; left: 5%; bottom: 0; }
 .room-chair-left { width: 11%; left: 30%; bottom: 2%; }
 .room-chair-right { width: 11%; right: 24%; bottom: 2%; }
@@ -191,11 +190,10 @@ body[data-scene="greece"] .scene-vignette { background: radial-gradient(ellipse 
   .pond-dock { width: 99%; left: 0; bottom: -3%; }
   .pond-reeds-left { width: 64%; left: -25%; bottom: -4%; }
   .pond-reeds-right { width: 39%; right: -20%; bottom: -5%; }
-  .greece-houses { width: 55%; left: 55%; bottom: 60%; }
-  .greece-occluder { mask-image: linear-gradient(to right, #000 0 21%, transparent 25% 82%, #000 86%); }
-  .greece-fence { width: 71%; right: -28%; bottom: -7%; }
+  .greece-houses { width: 66%; left: 49.5%; bottom: 60%; }
+  .greece-fence { width: 71%; right: -38%; bottom: -7%; }
   .greece-olive { width: 76%; left: -34%; bottom: -7%; }
-  .greece-orange { width: 55%; right: -24%; bottom: 0; }
+  .greece-orange { width: 55%; right: -24%; bottom: -4%; }
   .portal-far-trees { width: 180%; left: -40%; bottom: 2%; }
   .portal-arch { width: 48%; left: 26%; bottom: 2%; }
   .portal-left-tree { width: 135%; left: -85%; bottom: -7%; }
@@ -211,7 +209,7 @@ body[data-scene="greece"] .scene-vignette { background: radial-gradient(ellipse 
   .meso-trex { width: 82%; right: -27%; bottom: -5%; }
   .meso-ferns-left { width: 84%; left: -55%; bottom: -7%; }
   .meso-ferns-right { width: 104%; right: -63%; bottom: -7%; }
-  .room-cabinet { width: 32%; right: -5%; bottom: 22%; }
+  .room-cabinet { width: 41.6%; right: -5%; bottom: 22%; }
   .room-armchair { width: 40%; left: -7%; bottom: 4%; }
   .room-chair-left { width: 23%; left: 24%; bottom: 3%; }
   .room-chair-right { width: 23%; right: 11%; bottom: 3%; }
