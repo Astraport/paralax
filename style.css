@@ -97,7 +97,9 @@ body[data-scene="meso"] .scene-vignette { background: radial-gradient(ellipse at
 .pond-reeds-left { width: 29%; left: -5%; bottom: -9%; }
 .pond-reeds-right { width: 18%; right: -6%; bottom: -9%; }
 .pond-reeds-right img { transform: scaleX(-1); }
-.greece-houses { width: 37%; left: 31%; bottom: 46%; }
+.greece-houses { width: 34%; left: 52%; bottom: 58%; }
+.greece-houses img { mask-image: linear-gradient(to bottom, #000 0 68%, transparent 100%); }
+.greece-occluder { mask-image: linear-gradient(to right, #000 0 34%, transparent 39% 62%, #000 67%); }
 .greece-fence { width: 39%; right: -11%; bottom: -11%; }
 .greece-olive { width: 23%; left: -5%; bottom: -9%; }
 .greece-orange { width: 18%; right: 7%; bottom: -1%; }
@@ -107,7 +109,7 @@ body[data-scene="meso"] .scene-vignette { background: radial-gradient(ellipse at
 .portal-left-tree { width: 44%; left: -8%; bottom: -11%; }
 .portal-right-tree { width: 43%; right: -8%; bottom: -11%; }
 .portal-foreground { width: 106%; left: -3%; bottom: -31%; }
-.meso-sauropods { width: 33%; left: 1%; bottom: 6%; filter: saturate(.8) brightness(.96); mask-image: linear-gradient(to bottom, #000 0%, #000 80%, transparent 100%); }
+.meso-sauropods { width: 33%; left: 1%; bottom: -2%; filter: saturate(.8) brightness(.96); mask-image: linear-gradient(to bottom, #000 0%, #000 80%, transparent 100%); }
 .meso-sauropods img { transform: scaleX(-1); }
 .meso-pterosaurs { width: 22%; left: 15%; top: 0; }
 .meso-trex { width: 50%; right: -2%; bottom: -5%; }
@@ -119,11 +121,11 @@ body[data-scene="meso"] .scene-vignette { background: radial-gradient(ellipse at
 }
 .scene[data-mode="pause"] .portal-arch img { animation-play-state: paused; }
 .room-cabinet { width: 17%; right: 18%; bottom: 13%; }
-.room-armchair { width: 21%; left: 5%; bottom: 8%; }
-.room-chair-left { width: 11%; left: 30%; bottom: 9%; }
-.room-chair-right { width: 11%; right: 24%; bottom: 9%; }
-.room-table { width: 29%; left: 37%; bottom: 6%; }
-.room-ball { width: 5%; right: 31%; bottom: 6%; }
+.room-armchair { width: 21%; left: 5%; bottom: 0; }
+.room-chair-left { width: 11%; left: 30%; bottom: 2%; }
+.room-chair-right { width: 11%; right: 24%; bottom: 2%; }
+.room-table { width: 29%; left: 37%; bottom: 0; }
+.room-ball { width: 5%; right: 31%; bottom: 0; }
 .room-cabinet::before, .room-armchair::before, .room-table::before, .room-chair::before, .room-ball::before { content: ''; position: absolute; z-index: 0; height: 5%; bottom: 2%; border-radius: 50%; background: rgba(39, 22, 8, .42); filter: blur(11px); }
 .room-cabinet::before { width: 92%; left: 4%; }
 .room-armchair::before { width: 75%; left: 12%; }
@@ -189,7 +191,8 @@ body[data-scene="greece"] .scene-vignette { background: radial-gradient(ellipse 
   .pond-dock { width: 99%; left: 0; bottom: -3%; }
   .pond-reeds-left { width: 64%; left: -25%; bottom: -4%; }
   .pond-reeds-right { width: 39%; right: -20%; bottom: -5%; }
-  .greece-houses { width: 73%; left: 14%; bottom: 42%; }
+  .greece-houses { width: 55%; left: 55%; bottom: 60%; }
+  .greece-occluder { mask-image: linear-gradient(to right, #000 0 21%, transparent 25% 82%, #000 86%); }
   .greece-fence { width: 71%; right: -28%; bottom: -7%; }
   .greece-olive { width: 76%; left: -34%; bottom: -7%; }
   .greece-orange { width: 55%; right: -24%; bottom: 0; }
@@ -203,17 +206,17 @@ body[data-scene="greece"] .scene-vignette { background: radial-gradient(ellipse 
   .scene:fullscreen .portal-right-tree { width: 180%; right: -113%; bottom: -5%; mask-image: linear-gradient(to bottom, transparent, #000 18%); }
   .scene:fullscreen .portal-foreground { width: 230%; left: -65%; bottom: -6%; }
   .scene-panel[data-panel="meso"] .layer-background img { object-position: 35% center; }
-  .meso-sauropods { width: 80%; left: -4%; bottom: 10%; }
+  .meso-sauropods { width: 80%; left: -4%; bottom: 0; }
   .meso-pterosaurs { width: 66%; left: -11%; top: 5%; }
   .meso-trex { width: 82%; right: -27%; bottom: -5%; }
   .meso-ferns-left { width: 84%; left: -55%; bottom: -7%; }
   .meso-ferns-right { width: 104%; right: -63%; bottom: -7%; }
   .room-cabinet { width: 32%; right: -5%; bottom: 22%; }
-  .room-armchair { width: 40%; left: -7%; bottom: 15%; }
-  .room-chair-left { width: 23%; left: 24%; bottom: 12%; }
-  .room-chair-right { width: 23%; right: 11%; bottom: 12%; }
-  .room-table { width: 61%; left: 25%; bottom: 9%; }
-  .room-ball { width: 12%; right: 9%; bottom: 6%; }
+  .room-armchair { width: 40%; left: -7%; bottom: 4%; }
+  .room-chair-left { width: 23%; left: 24%; bottom: 3%; }
+  .room-chair-right { width: 23%; right: 11%; bottom: 3%; }
+  .room-table { width: 61%; left: 25%; bottom: 1%; }
+  .room-ball { width: 12%; right: 9%; bottom: 0; }
   .scene-plaque { left: 10px; bottom: 10px; font-size: 8px; padding: 8px 9px; gap: 8px; }
   body[data-scene="meso"] .scene-plaque { left: 10px; }
   .scene-plaque span:first-child { padding-right: 8px; }
