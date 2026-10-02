@@ -124,7 +124,7 @@ body[data-scene="meso"] .scene-vignette { background: radial-gradient(ellipse at
 .room-armchair { width: 21%; left: 5%; bottom: 0; }
 .room-chair-left { width: 11%; left: 30%; bottom: 2%; }
 .room-chair-right { width: 11%; right: 24%; bottom: 2%; }
-.room-table { width: 29%; left: 37%; bottom: 0; }
+.room-table { width: 29%; left: 37%; bottom: -6%; }
 .room-ball { width: 5%; right: 31%; bottom: 0; }
 .room-cabinet::before, .room-armchair::before, .room-table::before, .room-chair::before, .room-ball::before { content: ''; position: absolute; z-index: 0; height: 5%; bottom: 2%; border-radius: 50%; background: rgba(39, 22, 8, .42); filter: blur(11px); }
 .room-cabinet::before { width: 92%; left: 4%; }
@@ -215,7 +215,7 @@ body[data-scene="greece"] .scene-vignette { background: radial-gradient(ellipse 
   .room-armchair { width: 40%; left: -7%; bottom: 4%; }
   .room-chair-left { width: 23%; left: 24%; bottom: 3%; }
   .room-chair-right { width: 23%; right: 11%; bottom: 3%; }
-  .room-table { width: 61%; left: 25%; bottom: 1%; }
+  .room-table { width: 61%; left: 25%; bottom: -3%; }
   .room-ball { width: 12%; right: 9%; bottom: 0; }
   .scene-plaque { left: 10px; bottom: 10px; font-size: 8px; padding: 8px 9px; gap: 8px; }
   body[data-scene="meso"] .scene-plaque { left: 10px; }
